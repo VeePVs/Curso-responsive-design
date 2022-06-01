@@ -161,7 +161,7 @@ main {
 }
 
 .monedas {
-    color: #FF9536;
+    color: var(--bitcoin-orange);
 }
 
 .comisiones {
@@ -178,8 +178,9 @@ main {
     display: flex;
 }
 
-.monedas-date{
+.moneda-date{
     background-color: var(--soft-orange);
+    color: var(--black);
 }
 
 .comisiones-date {
@@ -272,6 +273,15 @@ main {
 
 .currency-table-container .table__bottom-right {
     border-radius: 0 0 15px 0;
+}
+
+.main-tables-container{
+    display: flex;
+    height: 390px;
+    margin: 0 calc(50% - 35%);
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .main-product-detail {
@@ -598,3 +608,18 @@ footer .batatabit p {
     margin-left: 52px;
 }
 
+@media (min-width: 930px) {
+    .product-cards--container {
+        display: inline-block;
+        width: 40vw;
+        max-width: 600px;
+        margin: 20px 10px 0 0;
+        padding-top:20px;
+    }
+}
+
+@media (min-width: 1020px){
+    .plans-container--slider {
+        justify-content: center;
+    }
+}
